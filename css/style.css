@@ -1,0 +1,215 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  font-family: "Cooper Hewitt", sans-serif;
+  color: white;
+}
+
+/*To make the screen size the same as iPhone 8*/
+.appview {
+  margin: 30px auto 0px;
+  width: 414px;
+}
+
+/*To replicate a real iPhone status bar*/
+.statusbar {
+  position: relative;
+  background-color: #0B3C5D;
+  height:20px;
+}
+
+.statusbar > * {
+  display: inline-block;
+}
+
+.statusbar h6 {
+  display: inline-block;
+  font-size: 0.6em;
+}
+
+/*Holds phone signal, phone carrier and wifi signal*/
+.leftbar {
+  position: absolute;
+  left: 5px;
+  top: 2.5px;
+}
+
+/*Centers the time*/
+.timebar {
+  left: 0px;
+  right: 0px;
+  top: 1px;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Shows battery icon*/
+.fas.fa-battery-full {
+  position: absolute;
+  right: 5px;
+  bottom: 1.5px;
+}
+
+/*Shows battery text 100%*/
+.percentage {
+  position: absolute;
+  right: 28px;
+  bottom: 4.5px;
+}
+
+/* Holds icons and header text */
+nav {
+  background-color: #0B3C5D;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  height:60px;
+}
+
+.fas.fa-chevron-left,.busstop,.fas.fa-bars {
+  display: inline-block;
+}
+
+/*Bus stop header*/
+.busstop {
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  right:0px;
+  text-align: center;
+}
+
+/*Back icon*/
+.fas.fa-chevron-left {
+  position: absolute;
+  bottom:10px;
+  left: 10px;
+}
+
+/*Menu icon*/
+.fas.fa-bars {
+  position: absolute;
+  bottom:10px;
+  right: 10px;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.busimage {
+  background: url("../images/busstop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 180px;
+}
+
+
+.upcomingarrival {
+  background-color: #D0B410;
+  height: 60px;
+  margin: -4px auto;
+}
+
+/* "Upcomming Arrivals" header text */
+.upcomingarrival h2 {
+  border-radius: 25px;
+  color: #090C10;
+  display: inline-block;
+  margin: 15px auto 0px 15px;
+  text-align: center;
+}
+
+/* Box for each bus line */
+.businfo {
+  background-color: #0B3C5D;
+  border-bottom: 3px solid grey;
+  height: 60px;
+}
+
+.businfo > * {
+  float: left;
+}
+
+.busnumber {
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 20%;
+}
+
+.busdirection {
+  line-height: 1.4em;
+  padding-top: 6px;
+  width: 45%;
+}
+
+.oosresume {
+  padding-top: 8px;
+}
+
+.direction {
+  text-decoration: underline;
+}
+
+.to {
+  font-size: 0.8em;
+}
+
+.finalstop {
+  font-weight: 600;
+}
+
+.bustime {
+  padding-top: 8px;
+}
+
+.etablock {
+  line-height: 1.1em;
+}
+
+/* Green text for minutes */
+.etaminutes {
+  color: #ADDB8E;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.NA {
+  color:white;
+  font-weight: normal;
+}
+
+.etaminutesresume {
+  color: #ADDB8E;
+  font-weight: 600;
+  font-size: 1.3em;
+  line-height: 1.2em;
+}
+
+/* red border around out of service */
+.outofservice {
+  border: 2px dotted #C60000;
+  padding: 0px 6px;
+  font-weight: 400;
+}
+
+/* red border around reroute */
+.reroute {
+  border: 2px solid #C60000;
+  padding: 0px 3px;
+  font-weight: 400;
+}
