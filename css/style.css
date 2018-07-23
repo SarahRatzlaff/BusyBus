@@ -161,10 +161,12 @@ h3 {
 }
 
 .direction {
+  display: inline;
   text-decoration: underline;
 }
 
 .to {
+  display: inline;
   font-size: 0.8em;
 }
 
@@ -202,6 +204,7 @@ h3 {
 
 /* red border around out of service */
 .outofservice {
+  display: inline;
   border: 2px dotted #C60000;
   padding: 0px 6px;
   font-weight: 400;
@@ -209,6 +212,7 @@ h3 {
 
 /* red border around reroute */
 .reroute {
+  display: inline;
   border: 2px solid #C60000;
   padding: 0px 3px;
   font-weight: 400;
