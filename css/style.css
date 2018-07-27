@@ -4,140 +4,94 @@
 
 body {
   background-color: lightgray;
-  font-family: "Cooper Hewitt", sans-serif;
   color: white;
+  font-family: "Cooper Hewitt", sans-serif;
+  font-size: 10px;
 }
 
 /*To make the screen size the same as iPhone 8*/
 .appview {
-  margin: 30px auto 0px;
-  width: 414px;
+  margin: 30px auto;
+  height: 667px;
+  overflow: auto;
+  width: 375px;
 }
 
-/*To replicate a real iPhone status bar*/
+/*To hold iPhone status bar*/
 .statusbar {
-  position: relative;
   background-color: #0B3C5D;
   height:20px;
-}
-
-.statusbar > * {
-  display: inline-block;
-}
-
-.statusbar h6 {
-  display: inline-block;
-  font-size: 0.6em;
-}
-
-/*Holds phone signal, phone carrier and wifi signal*/
-.leftbar {
-  position: absolute;
-  left: 5px;
-  top: 2.5px;
-}
-
-/*Centers the time*/
-.timebar {
-  left: 0px;
-  right: 0px;
-  top: 1px;
-  position: absolute;
-  text-align: center;
-  font-weight: bold;
-}
-
-/*Shows battery icon*/
-.fas.fa-battery-full {
-  position: absolute;
-  right: 5px;
-  bottom: 1.5px;
-}
-
-/*Shows battery text 100%*/
-.percentage {
-  position: absolute;
-  right: 28px;
-  bottom: 4.5px;
 }
 
 /* Holds icons and header text */
 nav {
   background-color: #0B3C5D;
-  padding-left: 10px;
-  padding-right: 10px;
   position: relative;
-  height:60px;
-}
-
-.fas.fa-chevron-left,.busstop,.fas.fa-bars {
-  display: inline-block;
+  height: 44px;
 }
 
 /*Bus stop header*/
-.busstop {
+nav h1 {
   position: absolute;
   bottom: 7px;
   left: 0px;
-  right:0px;
+  right: 0px;
   text-align: center;
 }
 
 /*Back icon*/
 .fas.fa-chevron-left {
   position: absolute;
-  bottom:10px;
+  bottom: 10px;
   left: 10px;
 }
 
 /*Menu icon*/
 .fas.fa-bars {
   position: absolute;
-  bottom:10px;
+  bottom: 10px;
   right: 10px;
 }
 
 h1 {
-  font-size: 2.1em;
+  font-size: 1.6em;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.4em;
 }
 
 .busimage {
   background: url("../images/busstop.png");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 180px;
+  height: 160px;
 }
-
 
 .upcomingarrival {
   background-color: #D0B410;
-  height: 60px;
-  margin: -4px auto;
+  height: 44px;
+  margin: -1px auto;
+  padding-left: 15px;
+  padding-top: 15px;
 }
 
-/* "Upcomming Arrivals" header text */
+/* "Upcoming Arrivals" header text */
 .upcomingarrival h2 {
-  border-radius: 25px;
   color: #090C10;
   display: inline-block;
-  margin: 15px auto 0px 15px;
-  text-align: center;
+  font-weight: 500;
 }
 
 /* Box for each bus line */
 .businfo {
   background-color: #0B3C5D;
-  border-bottom: 3px solid grey;
-  height: 60px;
+  border-bottom: 1px solid #80808038;
+  height: 44px;
 }
 
 .businfo > * {
@@ -145,75 +99,65 @@ h3 {
 }
 
 .busnumber {
-  padding-top: 15px;
+  padding-top: 14.5px;
   padding-left: 15px;
   width: 20%;
 }
 
 .busdirection {
   line-height: 1.4em;
-  padding-top: 6px;
-  width: 45%;
+  padding-top: 9px;
+  width: 53%;
+  letter-spacing: 1px;
 }
 
-.oosresume {
-  padding-top: 8px;
+.oos {
+  line-height: 1.6em;
+  padding-top: 6px;
+}
+
+/* make destination somewhat bold */
+.busdirection h3 {
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .direction {
   display: inline;
-  text-decoration: underline;
-}
-
-.to {
-  display: inline;
-  font-size: 0.8em;
-}
-
-.finalstop {
-  font-weight: 600;
+  font-size: 1.0em;
 }
 
 .bustime {
-  padding-top: 10px;
-}
-
-.etablock {
-  line-height: 1.1em;
+  line-height: 1.3em;
+  padding-top: 9px;
 }
 
 /* Green text for minutes */
-.etaminutes {
+.bustime h3 {
   color: #ADDB8E;
   display: inline-block;
   font-weight: 600;
-  font-size: 1.3em;
 }
 
 .NA {
-  color:white;
+  padding-top: 15px;
+}
+.NA h3 {
+  color: white;
   font-weight: normal;
 }
 
-.etaminutesresume {
-  color: #ADDB8E;
-  font-weight: 600;
-  font-size: 1.3em;
-  line-height: 1.2em;
-}
-
-/* red border around out of service */
-.outofservice {
-  display: inline;
-  border: 2px dotted #C60000;
-  padding: 0px 6px;
-  font-weight: 400;
+/* red background around out of service */
+mark {
+  background-color: #8B0000;
+  color: white;
+  padding: 0px 2px;
 }
 
 /* red border around reroute */
 .reroute {
   display: inline;
-  border: 2px solid #C60000;
+  border: 2px solid #8B0000;
   padding: 0px 3px;
   font-weight: 400;
 }

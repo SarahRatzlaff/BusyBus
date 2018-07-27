@@ -4,32 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Busy Bus</title> <!--This is one screen from my Busy Bus app-->
-  <!--Using fontawesome and one animation from w3 schools-->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--Using fontawesome and own style-->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="appview"> <!--Made this div 414px to match width of an iPhone 8-->
+  <div class="appview"> <!--Made this div 375px to match width of an iPhone 8-->
     <header>
-      <div class="statusbar"> <!--replicates an iPhone status bar-->
-        <div class="leftbar">
-          <i class="fas fa-signal"></i>
-          <h6>SR</h6>
-          <i class="fas fa-wifi"></i>
-        </div>
-        <div class="timebar">
-          <h6>10:57 PM</h6>
-        </div>
-        <div>
-          <h6 class="percentage">100%</h6>
-          <i class="fas fa-battery-full"></i>
-        </div>
+      <div class="statusbar">
+        <img src="images/statusbar.svg" />
       </div>
       <nav>
         <i class="fas fa-chevron-left"></i>
-        <h1 class="busstop">Washington and State</h1>
+        <h1>Washington and State</h1>
         <i class="fas fa-bars"></i>
       </nav>
     </header>
@@ -38,7 +26,7 @@
     <section class="buslist">
       <header>
         <div class="upcomingarrival">
-          <h2 class="w3-animate-right">Upcoming Arrivals</h2>
+          <h2>Upcoming Arrivals</h2>
         </div>
       </header>
       <!--Ul below holds each bus line-->
@@ -49,16 +37,12 @@
             <h2>J14</h2>
           </div>
           <div class="busdirection">
-            <div class="direction">Southbound</div>&nbsp;
-            <div class="to">to</div>
-            <h4 class="finalstop">103rd/Stony Island</h4>
+            <h3>103rd/Stony Island</h3>
+            <div class="direction">Southbound</div>
           </div>
           <div class="bustime">
-            <div class="etablock">ETA &nbsp;
-              <i class="far fa-clock"></i>&nbsp;&nbsp;
-              <h4 class="etaminutes">5 min</h4><br>
-              <div class="to">Runs every 15 min</div>
-            </div>
+            <h3>5 min</h3>
+            <div class="runs">Runs every 15 min</div>
           </div>
         </li>
         <li class="businfo">
@@ -66,16 +50,12 @@
             <h2>151</h2>
           </div>
           <div class="busdirection">
-            <div class="direction">Northbound</div>&nbsp;
-            <div class="to">to</div>
-            <h4 class="finalstop">Devon/Clark</h4>
+            <h3>Devon/Clark</h3>
+            <div class="direction">Northbound</div>
           </div>
           <div class="bustime">
-            <div class="etablock">ETA &nbsp;
-              <i class="far fa-clock"></i>&nbsp;&nbsp;
-              <h4 class="etaminutes">6 min</h4><br>
-              <div class="to">Runs every 16 min</div>
-            </div>
+            <h3>6 min</h3>
+            <div class="runs">Runs every 16 min</div>
           </div>
         </li>
         <li class="businfo">
@@ -83,16 +63,12 @@
             <h2>124</h2>
           </div>
           <div class="busdirection">
-            <div class="direction">Eastbound</div>&nbsp;
-            <div class="to">to</div>
-            <h4 class="finalstop">Navy Pier</h4>
+            <h3>Navy Pier</h3>
+            <div class="direction">Eastbound</div>
           </div>
           <div class="bustime">
-            <div class="etablock">ETA &nbsp;
-              <i class="far fa-clock"></i>&nbsp;&nbsp;
-              <h4 class="etaminutes">9 min</h4><br>
-              <div class="to">Runs every 10 min</div>
-            </div>
+            <h3>9 min</h3>
+            <div class="runs">Runs every 10 min</div>
           </div>
         </li>
         <li class="businfo">
@@ -100,16 +76,12 @@
             <h2>60</h2>
           </div>
           <div class="busdirection">
-            <div class="direction">Eastbound</div>&nbsp;
-            <div class="to">to</div>
-            <h4 class="finalstop">Randolph/Harbor Dr</h4>
+            <h3>Randolph/Harbor Dr</h3>
+            <div class="direction">Eastbound</div>
           </div>
           <div class="bustime">
-            <div class="etablock">ETA &nbsp;
-              <i class="far fa-clock"></i>&nbsp;&nbsp;
-              <h4 class="etaminutes">12 min</h4><br>
-              <div class="to">Runs every 20 min</div>
-            </div>
+            <h3>12 min</h3>
+            <div class="runs">Runs every 20 min</div>
           </div>
         </li>
         <li class="businfo">
@@ -117,80 +89,65 @@
             <h2>124</h2>
           </div>
           <div class="busdirection">
-            <div class="direction">Southbound</div>&nbsp;
-            <div class="to">to</div>
-            <h4 class="finalstop">Navy Pier</h4>
+            <h3>Navy Pier</h3>
+            <div class="direction">Southbound</div>
           </div>
           <div class="bustime">
-            <div class="etablock">ETA &nbsp;
-              <i class="far fa-clock"></i>&nbsp;&nbsp;
-              <h4 class="etaminutes">15 min</h4><br>
-              <div class="to">Runs every 10 min</div>
-            </div>
+            <h3>15 min</h3>
+            <div class="runs">Runs every 10 min</div>
           </div>
         </li>
         <li class="businfo">
           <div class="busnumber">
             <h2>4</h2>
           </div>
-          <div class="busdirection oosresume">
-            <!--Added dotted red border around out of service-->
-            <div class="outofservice">Out of Service</div>
-            <h4 class="finalstop">Cottage Grove</h4>
+          <div class="busdirection oos">
+            <!--Added red background around out of service-->
+            <mark>Out of Service</mark>
+            <h3>Cottage Grove</h3>
           </div>
           <div class="bustime">
-            <div class="etablock">
-              <div class="resumes">Resumes<br>
-                <h4 class="etaminutesresume">12:10 AM</h4>
-              </div>
-            </div>
+            <h3>12:10 am</h3>
+            <div class="resumes">Resumes</div>
           </div>
         </li>
         <li class="businfo">
           <div class="busnumber">
             <h2>20</h2>
           </div>
-          <div class="busdirection oosresume">
-            <div class="outofservice">Out of service</div>
-            <h4 class="finalstop">Madison</h4>
+          <div class="busdirection oos">
+            <mark>Out of service</mark>
+            <h3>Madison</h3>
           </div>
           <div class="bustime">
-            <div class="etablock">
-              <div class="resumes">Resumes<br>
-                <h4 class="etaminutesresume">12:10 AM</h4>
-              </div>
-            </div>
+            <h3>12:10 am</h3>
+            <div class="resumes">Resumes</div>
           </div>
         </li>
         <li class="businfo">
           <div class="busnumber">
             <h2>157</h2>
           </div>
-          <div class="busdirection oosresume">
-            <div class="outofservice">Out of service</div>
-            <h4 class="finalstop">Streeterville/Taylor</h4>
+          <div class="busdirection oos">
+            <mark>Out of service</mark>
+            <h3>Streeterville/Taylor</h3>
           </div>
           <div class="bustime">
-            <div class="etablock">
-              <div class="resumes">Resumes<br>
-                <h4 class="etaminutesresume">06:00 AM</h4>
-              </div>
-            </div>
+            <h3>06:00 am</h3>
+            <div class="resumes">Resumes</div>
           </div>
         </li>
         <li class="businfo">
           <div class="busnumber">
             <h2>6x</h2>
           </div>
-          <div class="busdirection oosresume">
+          <div class="busdirection oos">
             <!--Added solid red border around reroute-->
             <div class="reroute">Reroute</div>
-            <h4 class="finalstop">Jackson Park Express</h4>
+            <h3>Jackson Park Express</h3>
           </div>
-          <div class="bustime">
-            <div class="etablock">&nbsp;
-              <h4 class="etaminutes NA">N/A</h4>
-            </div>
+          <div class="bustime NA">
+            <h3>N/A</h3>
           </div>
         </li>
       </ul>
